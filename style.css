@@ -1,0 +1,91 @@
+/* css variable declaration  */
+
+:root{
+    --pure-white:#fff;
+    --main-bg:#f9f9f9;
+    --aqua-green:#359381;
+    --shadow:rgba(0,0,0,0.2);
+    --dark-green:#003329;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    padding: 30px 100px;
+}
+
+.logo{
+    font-size: 2rem;
+    color: var(--aqua-green);
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--aqua-green);
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover{
+    background-color: var(--aqua-green);
+    color: var(--pure-white);
+}
+
+/* parallax section  */
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.text{
+    position: absolute;
+    font-size: 5rem;
+    color: var(--pure-white);
+    text-shadow: 2px 2px 10px var(--shadow);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.textsection{
+    position: relative;
+    background-color: var(--dark-green);
+    padding: 100px;
+}
+.textsection h2{
+    font-size: 3rem;
+    color: var(--pure-white);
+    margin-bottom: 10px;
+}
+.textsection p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--pure-white);
+}
