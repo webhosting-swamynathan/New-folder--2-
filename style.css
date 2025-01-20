@@ -136,3 +136,18 @@ section{
     border-radius: 10px;
     transform: translate(-80px,50px);
 }
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 80px;
+    padding-top: 100px;
+}
