@@ -14,13 +14,16 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="parallax">
-        <h1 class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-signpost" viewBox="0 0 16 16">
-            <path d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0M12.532 5l1.666 2-1.666 2H2V5z"/>
-          </svg> Explore . . .</h1>
+        <h1 class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor"
+                class="bi bi-signpost" viewBox="0 0 16 16">
+                <path
+                    d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0M12.532 5l1.666 2-1.666 2H2V5z" />
+            </svg> Explore . . .</h1>
         <div class="parallax__layer parallax__layer__0">
             <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
                 id="hill1" />
@@ -50,10 +53,12 @@
                 id="hill7" />
         </div>
         <div class="parallax__cover">
-            <h4>HELLO I'M</h4>
-            <h4>SWAMYNATHAN <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" style="color: rgb(243, 93, 39);" class="bi bi-bicycle mx-3" viewBox="0 0 16 16">
-                <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"/>
-              </svg></h4>
+            <h4  data-aos="fade-right">HELLO I'M</h4>
+            <h4>SWAMYNATHAN <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                    style="color: rgb(243, 93, 39);" class="bi bi-bicycle mx-3" viewBox="0 0 16 16">
+                    <path
+                        d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z" />
+                </svg></h4>
             <section class="sec-01">
                 <div class="container">
                     <h2 class="main-title">About Mee . . . </h2>
@@ -71,12 +76,18 @@
                         <a href="" class="icon"><i class="fab fa-github"></i></a>
                         <a href="" class="icon"><i class="fab fa-linkedin"></i></a>
                         <a href="" class="icon"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="icon"><i class="fab fa-youtube"></i></a> 
+                        <a href="" class="icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+
+    <!-- AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>
