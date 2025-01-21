@@ -104,3 +104,7 @@ body {
     background-color: rgb(245, 120, 75);
     font-size: 1.2rem;
 }
+#logo{
+    font-size: x-large;
+    font-weight: 500;
+}
