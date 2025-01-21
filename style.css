@@ -82,72 +82,25 @@ body {
     transform: translateZ(-200px) scale(3);
 }
 
-/* Animate on Scroll  */
+/* About section */
 
-section{
-    position: relative;
-    display: flex;
+#summary{
     justify-content: center;
+}
+
+/* Download button  */
+.download-btn{
+
+    display: flex;
     align-items: center;
-    padding: 80px 100px;
+    background-color: orangered;
     color: #ffffff;
-} 
-.container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 3px;
+    padding: 10px 15px;
+    border: none;
+    transition: all 0.4s ease;
 }
-.main-title{
-    font-size: 4em;
-    margin-bottom: 50px;
-}
-.content{
-    position: relative;
-    width: 1150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content .image{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.content .image img{
-    z-index: 111;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.content .text-box{
-    z-index: 222;
-    background: rgba(225, 225, 225, 0.1);
-    backdrop-filter: blur(20px);
-    padding: 40px;
-    max-width: 400px;
-    border: 1px solid rgba(225, 225, 225, 0.1);
-    border-radius: 10px;
-    transform: translate(-80px,50px);
-}
-.content .text-box h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.media-icons {
-    margin-top: 100px;
-}
-
-.media-icons a {
-    color: #fff;
-    font-size: 2em;
-    margin: 80px;
-    padding-top: 100px;
+.download-btn:hover{
+    background-color: rgb(245, 120, 75);
+    font-size: 1.2rem;
 }
