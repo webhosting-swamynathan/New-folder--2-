@@ -131,7 +131,7 @@ body {
 
 .container .card {
     position: relative;
-    max-width: 350px;
+    width: 380px;
     height: 215px;
     margin: 50px 30px;
     padding: 10px 20px;
