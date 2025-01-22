@@ -35,3 +35,7 @@ const initTimer = () => {
 };
 
 downloadBtn.addEventListener("click", initTimer);
+
+
+// send mail 
+
