@@ -39,7 +39,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    height: 2000px;
+    height: 5000px;
     z-index: 2;
 }
 
@@ -84,12 +84,12 @@ body {
 
 /* About section */
 
-#summary{
+#summary {
     justify-content: center;
 }
 
 /* Download button  */
-.download-btn{
+.download-btn {
 
     display: flex;
     align-items: center;
@@ -100,11 +100,80 @@ body {
     border: none;
     transition: all 0.4s ease;
 }
-.download-btn:hover{
+
+.download-btn:hover {
     background-color: rgb(245, 120, 75);
     font-size: 1.2rem;
 }
-#logo{
+
+#logo {
     font-size: x-large;
     font-weight: 500;
+}
+
+/* card parallax  */
+.bodies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 350px;
+    height: 215px;
+    margin: 50px 30px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgBX {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBX img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
 }
